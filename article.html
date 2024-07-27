@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article 1</title>
+    <title>Ma Première Semaine de Stage</title>
     <link rel="shortcut icon" type="image/x-icon" href="logo2.ico">
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="stylearticle.css">
@@ -12,9 +12,7 @@
     <header>
         <nav>
             <a href="/Tpacces">Login</a>
-            
-            <h1 style="color: #fff;"><a href="blog.html">OFF-TRACK</a></h1>
-            
+            <h1 style="color: #fff;"><a href="blog.html">SuTheo</a></h1>
             <div class="logonav">
                 <img src="logo.png" alt="Logo" class="logo">
             </div>
@@ -22,110 +20,44 @@
     </header>
     <main>
         <article>
-        
-            <table>
-                
-                <caption><strong>stat annuelles de Lewis Hamilton en Formule 1</strong></caption>
+            <h2>Contexte du Stage</h2>
+            <p>Mon stage chez Dupont-Restauration, une entreprise ayant été victime d’une attaque de leur infrastructure en décembre dernier, se déroule en pleine reconstruction de leur système informatique. Ma mission principale consiste à aider l’entreprise à mettre en place des démarches de sécurité pour sécuriser leur parc informatique. Je donne également mon avis sur leur système et propose des axes d'amélioration.</p>
 
+            <h3>Jour 1</h3>
+            <p>Explication de l’entreprise (joindre schéma).</p>
+            <p>Mon rôle était de récupérer le nom des PC opérationnels sur le site afin d'en dresser une liste sur <em>GLPI</em> et de récupérer la liste des PC sur <em>Trend Micro</em> afin de repérer les PC présents dans l’un et non dans l’autre, puis de régler le problème avec le support informatique.</p>
+            <p><strong>Retour du jour 1 :</strong> Ma liste est très utile pour suivre les PC du parc de l’entreprise car Marc avait besoin de cette liste pour la facturation.</p>
 
-                <thead>
-                    <tr>
-                        <th scope="col">Année</th>
-                        <th scope="col">Nombre de Pole</th>
-                        <th scope="col">Nombre de Victoire</th>
-                        <th scope="col">Nombre de Titre Mondiaux</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2013</td>
-                        <td>5</td>
-                        <td>1</td>
-                        <td>1</td>
-                    </tr>
-                </tbody>
-                
-                    <tr>
-                        <td>2014</td>
-                        <td>7</td>
-                        <td>11</td>
-                        <td>2</td>
-                    </tr>
-                
-                    <tr>
-                        <td>2015</td>
-                        <td>11</td>
-                        <td>10</td>
-                        <td>3</td>
-                    </tr>
-                
-                    <tr>
-                        <td>2016</td>
-                        <td>12</td>
-                        <td>10</td>
-                        <td>4</td>
-                    </tr>
-                
-                    <tr>
-                        <td>2017</td>
-                        <td>11</td>
-                        <td>9</td>
-                        <td>4</td>
-                    </tr>
-                
-                    <tr>
-                        <td>2018</td>
-                        <td>11</td>
-                        <td>11</td>
-                        <td>5</td>
-                    </tr>
-                
-                    <tr>
-                        <td>2019</td>
-                        <td>5</td>
-                        <td>11</td>
-                        <td>6</td>
-                    </tr>
-                
-                    <tr>
-                        <td>2020</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>7</td>
-                    </tr>
-                
-                    <tr>
-                        <td>2021</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>7</td>
-                    </tr>
-            </table>
-            <h1 style="zoom: 70%">COMMENTAIRE :</h1>
-            <div class="comment">
-                <div class="comment-content">
-                    <p>Super intéressant ! J'ai hâte d'en apprendre davantage sur ces nouvelles technologies. Merci pour le partage.</p>
-                    <span class="timestamp" style="zoom: 50%;">2 février 2024 à 15h30</span>
-                </div>
-            </div>
-            <button> Ajouter Un Commentaire </button>
+            <h3>Jour 2</h3>
+            <p>Réparation des PC du parc dans le domaine sans Trend, donc sans protection, ce qui constitue une urgence majeure. Ensuite, j’ai pris le contrôle des PC hors du domaine pour leur installer la suite Trend qui était mal installée et représentait un risque pour l’entreprise. Par la suite, j’ai remarqué que 147 PC étaient mal installés, ce qui est énorme pour un parc de 3500 PC.</p>
+            <p><strong>Retour du jour 2 :</strong> Ma liste des PC mal installés était utile pour la facturation. En effet, tous les PC mal installés ne seront pas facturés par le prestataire car ils représentent une menace pour l’entreprise.</p>
+
+            <h3>Jour 3</h3>
+            <p>Pour le troisième jour, j’ai dû récupérer la liste des PC mal installés avec la licence Trend et GLPI afin de les réparer. Pour réparer GLPI, il faut installer GLPI Agent à la racine du PC. Pour bien installer Trend Micro, il faut l’installer dans la racine du PC et déployer tous les services du logiciel.</p>
+            <p><strong>Retour du jour 3 :</strong> J’ai déployé 80 PC avec la suite Trend & GLPI Agent. Pour la suite de mon stage, je devrai réparer les 150 PC mal installés.</p>
+
+            <h3>Jour 4</h3>
+            <p>Pour ce quatrième jour, j’ai dû identifier les personnes du siège et les DR qui n'ont pas le MFA (Multi-Factor Authentication) car ils représentent un risque pour l’entreprise en sortant du site avec leurs PC. Avec le MFA, en cas de vol ou autre, les données et accès aux sites de l’entreprise sont mieux contrôlés. L’entreprise a mis en place une formation en cybersécurité, et j’ai vérifié les personnes qui ne se sont pas inscrites à la formation ainsi que celles inscrites n’ayant pas encore suivi la formation.</p>
+            <p><strong>Retour du jour 4 :</strong> J’ai vérifié la sécurité des employés de l’entreprise et les ai rendus moins vulnérables aux attaques.</p>
+
+            <h3>Jour 5</h3>
+            <p>Pour le cinquième jour, j’ai contrôlé l'accès des PC aux sites web, par exemple les sites de streaming (Netflix, Disney, etc.) sont bloqués pour aider à la concentration des employés. Nous avons également bloqué des sites contenant des malwares, du phishing et autres menaces. Ensuite, l'après-midi, j’ai contrôlé l'accès aux applications de l’entreprise pour éviter que les employés téléchargent des applications comportant des malwares. J’ai donc instantanément bloqué les applications sans signature car elles représentent un risque trop élevé pour l’entreprise.</p>
+            <p><strong>Retour du jour 5 :</strong> J’ai compris l’importance de bloquer l'accès à certains sites car les gens sont trop facilement distraits de leur travail, notamment sur les réseaux sociaux, qui représentent 70% des sites bloqués par Trend.</p>
         </article>
     </main>
     <footer id="footer">
         <nav>
             <p>Triple Blog</p>
-            <a href="Arbre.html">arborescence</a>
             <ul>
-                <li><a href="blog.html">Mon blog de MONSTRE</a></li>
+                <li><a href="blog.html">Mon blog de Stage</a></li>
             </ul>
         </nav>
         <nav>
-            <p>Auteur : Suckiel Theo</p>
-            <p>Adresse : 10 rue La Bas</p>
-            <p>Email : Triplemonstre@gmail.com</p>
-            <p>Téléphone : 0102030405</p>
+            <p>Auteur :</p>
+            <p>Adresse :</p>
+            <p>Email :</p>
+            <p>Téléphone :</p>
         </nav>
-        
     </footer>
 </body>
 </html>
