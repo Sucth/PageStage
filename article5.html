@@ -1,37 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Première Semaine de Stage</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo2.ico">
+    <link rel="icon" type="image/png" href="1.png">
+    <link rel="stylesheet" href="stylearticle.css">
+</head>
 <body>
     <header>
-        </header>
+        <nav>
+            <a href="/Tpacces">Login</a>
+            <h1 style="color: #fff;"><a href="blog.html">SuTheo</a></h1>
+            <div class="logonav">
+                <img src="1.png" alt="Logo" class="logo">
+            </div>
+        </nav>
+    </header>
     <main>
         <article>
             <h2>Un problème venu de l'intérieur</h2>
-            <p>
-                Pendant mon stage, nous avons été confrontés à un problème interne. Un membre de l'équipe utilisait son ordinateur professionnel à des fins personnelles, notamment pour accéder à des sites de jeux d'argent et regarder des contenus en streaming.
-            </p>
+            <p>Pendant mon stage nous avons eu un problème venant de l'intérieur… Pour régler ce problème nous avons appliqué :</p>
+            <ul>
+                <li>Analyse</li>
+                <li>Réflexion</li>
+                <li>Résolution</li>
+            </ul>
 
             <h3>Analyse</h3>
-            <p>
-                Grâce à l'analyse des logs, nous avons pu confirmer ces activités. Le collaborateur avait installé plusieurs logiciels de jeu et utilisait des extensions Chrome pour contourner les restrictions.
-            </p>
+            <p>Durant la quatrième semaine, j’ai eu un problème avec un membre de l'équipe. En effet, j’ai remarqué qu'une personne de l'équipe allait sur des sites d’argent pendant les heures de travail et autres sites, mais il utilisait son PC professionnel pour jouer. Ensuite, j’ai analysé les logs de GLPI pour voir quel logiciel avait été installé et, en effet, plusieurs logiciels de jeu étaient installés. Pour confirmer cela, j'ai analysé les logs de Trend qui renvoient toutes les analyses du PC et j’ai découvert que cette personne utilisait aussi des extensions Chrome pour jouer, regarder Netflix, etc.</p>
 
             <h3>Résolution</h3>
-            <p>
-                Pour remédier à cette situation, nous avons mis en place plusieurs mesures :
-                <ul>
-                    <li><strong>Blocage des sites web inappropriés :</strong> Nous avons utilisé la solution de filtrage web de Trend Micro pour bloquer l'accès aux sites de jeux d'argent, de jeux en général et de contenus pornographiques.</li>
-                    <li><strong>Restriction des applications :</strong> Nous avons supprimé les droits d'administration du collaborateur et mis en place des règles pour empêcher l'installation d'applications non autorisées.</li>
-                    <li><strong>Blocage des extensions :</strong> Nous avons utilisé des objets de stratégie de groupe (GPO) pour bloquer toutes les extensions Chrome, à l'exception de Trend Micro.</li>
-                </ul>
-            </p>
+            <p>Pour résoudre ce problème, j’ai trois points à traiter :</p>
+            <ul>
+                <li>Les sites WEB</li>
+                <li>Les applications</li>
+                <li>Les extensions</li>
+            </ul>
+
+            <h4>Les sites web</h4>
+            <p>Pour traiter le problème des sites web qui ne devraient pas être utilisés pendant les heures de travail, j’ai utilisé la web réputation de Trend Micro pour bloquer les sites sur lesquels ils ne doivent pas aller (jeu d’argent, jeux, sites pornographiques, etc.).</p>
+            <img src="Trend_Micro_for_Chrome_Open_Blocked_Page.jpg" alt="" style="zoom: 3;">
+
+            <h4>Les applications</h4>
+            <p>Pour régler le problème des applications installées, nous avons découvert que pour installer ces applications, cette personne utilisait son N2 pour pouvoir les installer. Nous avons donc supprimé son N2 et créé des règles sur les applications qui ne doivent pas être installées.</p>
+
+            <h4>Les extensions</h4>
+            <p>Pour régler le problème des extensions, nous avons d'abord essayé de les bloquer dans Trend Micro, mais nous n'avons pas réussi car les extensions ne sont pas considérées comme des pages web donc ne sont pas bloquables comme un site web. Nous avons donc décidé de passer par GPO pour bloquer les extensions de Chrome. Ce que nous avons fait est de bloquer toutes les extensions sur Chrome sauf Trend Micro pour continuer à avoir la protection de l’antivirus sur toutes les machines.</p>
+            <img src="Google-Chrome-Extensions.jpg" alt="">
 
             <h3>Améliorations</h3>
-            <p>
-                Cette expérience nous a permis de mettre en évidence l'importance de la surveillance des logs. En analysant les logs Winlogbeat, nous pouvons détecter plus rapidement les activités suspectes et prendre les mesures nécessaires.
-            </p>
-        </article>
+            <p>Pour améliorer le système et la sécurité, nous avons résolu ces problèmes car ils représentent une menace en termes de sécurité. Un logiciel malveillant installé avec un N2 qui parvient à s'introduire dans le système peut être dévastateur. Le premier point d'amélioration était de traquer les logs Winlogbeat (application qui renvoie des logs) qui sont envoyés au SOC, car dessus nous voyons une analyse complète du système. Avec cette application, nous sommes capables de détecter toute dérive et d'agir au plus vite.</p>
+        </article> 
     </main>
-    </body>
+    <footer id="footer">
+        <nav>
+            <ul>
+                <li><a href="blog.html">Mon blog de Stage</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <p>Auteur : SUCKIEL Theo</p>
+            <p>Adresse : 2 Place de Leurope Toulouse</p>
+            <p>Email : theo.suckiel@outlook.fr</p>
+            <p>Téléphone : 0686590462</p>
+        </nav>
+    </footer>
+</body>
 </html>
