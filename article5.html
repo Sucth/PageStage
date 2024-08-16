@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Un problème venu de l'intérieur</title>
-    <link rel="shortcut icon" type="image/x-icon" href="logo2.ico">
+    <title>La Cybersécurité</title>
+    <link rel="shortcut icon" type="image/x-icon" href="1.ico">
     <link rel="icon" type="image/png" href="1.png">
     <link rel="stylesheet" href="stylearticle.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="/Tpacces">Login</a>
-            <h1 style="color: #fff;"><a href="index.html">SuTheo</a></h1>
+            <a >SUCKIEL Theo</a>
+            <h1 style="color: #fff;"><a href="blog.html">SuTheo</a></h1>
             <div class="logonav">
                 <img src="1.png" alt="Logo" class="logo">
             </div>
@@ -20,39 +20,35 @@
     </header>
     <main>
         <article>
-            <h2>Un problème venu de l'intérieur</h2>
-            <p>Pendant mon stage nous avons eu un problème venant de l'intérieur… Pour régler ce problème nous avons appliqué :</p>
+            <h2>1. La sauvegarde</h2>
+            <p>Lors de mon stage chez Dupont-Restauration, j'ai eu l'opportunité de visiter leur datacenter, où j'ai pu comprendre l'importance cruciale de la sauvegarde des données. Mon collègue Jordan m'a expliqué comment une stratégie de sauvegarde bien conçue leur a permis de récupérer leurs données après une cyberattaque.</p>
+            <h3>Une Infrastructure Solide</h3>
+            <p>Dans le datacenter, Dupont-Restauration utilise un serveur de sauvegarde doté d'une capacité de stockage impressionnante de 500 To. Cette infrastructure est essentielle pour assurer la continuité des opérations et la protection des données sensibles. La stratégie de sauvegarde repose sur une rotation régulière des disques. Voici comment cela fonctionne :</p>
+            <img src="tape-backup.jpg" alt="" style="zoom: 2;" >
             <ul>
-                <li>Analyse</li>
-                <li>Réflexion</li>
-                <li>Résolution</li>
+                <li><strong>Rotation Hebdomadaire :</strong> Chaque semaine, un disque est remplacé par un nouveau.</li>
+                <li><strong>Conservation Mensuelle :</strong> Le disque remplacé est conservé pendant un mois avant d'être à son tour remplacé.</li>
+                <li><strong>Conservation Annuelle :</strong> Après un mois, le disque est conservé pendant un an.</li>
+                <li><strong>Conservation à Long Terme :</strong> Enfin, après un an, le disque est conservé pendant dix ans.</li>
             </ul>
-
-            <h3>Analyse</h3>
-            <p>Durant la quatrième semaine, j’ai eu un problème avec un membre de l'équipe. En effet, j’ai remarqué qu'une personne de l'équipe allait sur des sites d’argent pendant les heures de travail et autres sites, mais il utilisait son PC professionnel pour jouer. Ensuite, j’ai analysé les logs de GLPI pour voir quel logiciel avait été installé et, en effet, plusieurs logiciels de jeu étaient installés. Pour confirmer cela, j'ai analysé les logs de Trend qui renvoient toutes les analyses du PC et j’ai découvert que cette personne utilisait aussi des extensions Chrome pour jouer, regarder Netflix, etc.</p>
-
-            <h3>Résolution</h3>
-            <p>Pour résoudre ce problème, j’ai trois points à traiter :</p>
-            <ul>
-                <li>Les sites WEB</li>
-                <li>Les applications</li>
-                <li>Les extensions</li>
-            </ul>
-
-            <h4>Les sites web</h4>
-            <p>Pour traiter le problème des sites web qui ne devraient pas être utilisés pendant les heures de travail, j’ai utilisé la web réputation de Trend Micro pour bloquer les sites sur lesquels ils ne doivent pas aller (jeu d’argent, jeux, sites pornographiques, etc.).</p>
-            <img src="Trend_Micro_for_Chrome_Open_Blocked_Page.jpg" alt="" style="zoom: 3;">
-
-            <h4>Les applications</h4>
-            <p>Pour régler le problème des applications installées, nous avons découvert que pour installer ces applications, cette personne utilisait son N2 pour pouvoir les installer. Nous avons donc supprimé son N2 et créé des règles sur les applications qui ne doivent pas être installées.</p>
-
-            <h4>Les extensions</h4>
-            <p>Pour régler le problème des extensions, nous avons d'abord essayé de les bloquer dans Trend Micro, mais nous n'avons pas réussi car les extensions ne sont pas considérées comme des pages web donc ne sont pas bloquables comme un site web. Nous avons donc décidé de passer par GPO pour bloquer les extensions de Chrome. Ce que nous avons fait est de bloquer toutes les extensions sur Chrome sauf Trend Micro pour continuer à avoir la protection de l’antivirus sur toutes les machines.</p>
-            <img src="Google-Chrome-Extensions.jpg" alt="">
-
-            <h3>Améliorations</h3>
-            <p>Pour améliorer le système et la sécurité, nous avons résolu ces problèmes car ils représentent une menace en termes de sécurité. Un logiciel malveillant installé avec un N2 qui parvient à s'introduire dans le système peut être dévastateur. Le premier point d'amélioration était de traquer les logs Winlogbeat (application qui renvoie des logs) qui sont envoyés au SOC, car dessus nous voyons une analyse complète du système. Avec cette application, nous sommes capables de détecter toute dérive et d'agir au plus vite.</p>
-        </article> 
+            <p>Cette méthode permet de toujours avoir des copies de sauvegarde récentes et historiques, minimisant ainsi les risques de perte de données en cas d'incident.</p>
+            <h3>Sécurité Physique et Logistique</h3>
+            <p>Lorsque nous quittons le datacenter, nous emportons deux disques pour les transférer au siège. Ces disques sont ensuite placés dans un coffre-fort, assurant une protection physique supplémentaire. Cette pratique garantit que même en cas de catastrophe affectant le datacenter, des copies de sauvegarde sécurisées sont disponibles ailleurs.</p>
+            <h3>La Précaution avant Tout</h3>
+            <p>Une des leçons clés que j'ai apprises est l'importance de vérifier la bonne exécution des sauvegardes avant d'entreprendre toute action en production. Cette vérification est essentielle pour éviter les pertes de données et assurer la continuité des opérations.</p>
+            <p>La sauvegarde des données est une composante essentielle de la stratégie de cybersécurité chez Dupont-Restauration. Grâce à une infrastructure robuste et à des pratiques rigoureuses, l'entreprise est capable de protéger ses données et de maintenir ses opérations, même en cas de cyberattaque.</p>
+            
+            <h2>2. Ping Castle</h2>
+            <p>Pendant mon stage j'ai pu effectuer un PingCastle. PingCastle est un outil de sécurité qui audite l'Active Directory (AD) d'une organisation pour identifier les faiblesses et vulnérabilités. Il scanne l'infrastructure complète de l'AD, analyse les résultats, et attribue un score de sécurité en fonction des problèmes détectés. Un score bas indique une bonne sécurité, tandis qu'un score élevé signale des risques à corriger. Le rapport généré par PingCastle propose des recommandations pour renforcer la sécurité de l'AD, aidant ainsi à prévenir les attaques et à assurer la conformité avec les normes de sécurité.</p>
+            <img src="pingcastle.png" alt="" style="zoom: 3;">
+            <p>Exemple Ping Castle</p>
+            <h2>3. Ma collaboration avec le SOC</h2>
+            <p>Pendant mon stage ma première mission était de visiter le CIV (database) dans le but de comprendre leurs infrastructures. Mais le but premier comme dit plus haut était de voir la sauvegarde du système.</p>
+            <p>Dans un second temps, j’ai vu les tickets du SOC (Security Operations Center), c’est-à-dire que le SOC a accès à toute notre infrastructure et reçoit les logs du système, donc dès que quelque chose ne va pas, ils reçoivent des logs et nous avertissent à travers un ticket. Mon but ici était de valider les tickets pour savoir s'ils sont pertinents ou non. La plupart étaient de petits événements, sauf un. En effet, un ticket concernait un scan de port et de nombreux pings vers un serveur pour une application de commande de repas. En analysant le rapport, j’ai pu découvrir que derrière tout cela, c'était en fait l'équipe de l'audit de sécurité (AcTeam) qui était en train de travailler, mais n’avait prévenu personne. Donc, aucun risque, sachant en plus qu’ils n'ont pas réussi à obtenir quoi que ce soit.</p>
+            <img src="SOC.png" alt="" style="zoom: 3;">
+            <p>Pour finir, j'ai participé au CoSec mensuel avec le SOC. Le but de ce CoSec est d'analyser notre système et d’en ressortir tous les défauts. Par exemple, nous examinons toutes les vulnérabilités, CVE qui nous concernent. Pour vous donner un exemple, dans le dernier CVE, deux nous concernaient : une sur VMware (un logiciel pour créer des machines virtuelles) et une sur OpenSSH qui m'a été donnée en mission. Je vous dirai dans un autre article ce qu'il en a été.</p>
+            <p>Dans un second temps, ils analysent notre PingCastle avec le score que nous avons, ce que nous avons amélioré et ce que nous devons faire dans le futur. Par exemple, nous avions un compte administrateur qui était l’admin principal de l’AD qui servait pour les applications qui avaient besoin de droits. Le problème ici est que si quelqu’un, en s’infiltrant dans l’application, récupère ce compte, toute notre infrastructure disparaît. Donc, nous avons créé des comptes de service qui sont liés à une application. Si celle-ci est compromise, ce n'est pas grave, car le compte utilisé est un compte de service qui a moins de droits, donc moins de risques. C’est le principe du moindre privilège, c’est-à-dire que chaque personne a des droits en fonction de ce qu'il fait et pas plus, dans le but de limiter le risque pour notre système si un compte est compromis.</p>
+        </article>
     </main>
     <footer id="footer">
         <nav>

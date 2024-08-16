@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vers l'alternance</title>
-    <link rel="shortcut icon" type="image/x-icon" href="1.ico">
+    <title>Un problème venu de l'intérieur</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo2.ico">
     <link rel="icon" type="image/png" href="1.png">
     <link rel="stylesheet" href="stylearticle.css">
 </head>
 <body>
     <header>
         <nav>
-            <a>SUCKIEL Theo</a>
-            <h1 style="color: #fff;"><a href="index.html">SuTheo</a></h1>
+            <a href="/Tpacces">Login</a>
+            <h1 style="color: #fff;"><a href="blog.html">SuTheo</a></h1>
             <div class="logonav">
                 <img src="1.png" alt="Logo" class="logo">
             </div>
@@ -20,34 +20,39 @@
     </header>
     <main>
         <article>
-            <h2>Vers l'alternance :</h2>
-            <p>Mon expérience chez Dupont-Restauration et mes aspirations</p>
-            <p>Depuis mon stage chez Dupont-Restauration, ma vision du monde professionnel a profondément évolué. Après deux années d'études en informatique, je me prépare activement pour un mastère en cybersécurité, une discipline qui me passionne de plus en plus. J'ai également commencé à rechercher une alternance, une démarche que j'ai initiée il y a huit mois. Ce stage m'a non seulement permis de développer mes compétences techniques, mais il m'a également confirmé que la cybersécurité est le domaine dans lequel je souhaite construire ma carrière. Cette expérience m'a renforcé dans ma conviction de poursuivre dans cette voie et m'a donné une vision claire de ce que je veux accomplir.</p>
-            
-            <h2>Une étape clé dans ma formation : le stage chez Dupont-Restauration</h2>
-            <p>Mon stage chez Dupont-Restauration a été bien plus qu'une simple introduction au monde du travail. Il m'a permis de prendre part à des missions concrètes et d'affronter des défis réels, comme la sécurisation du parc informatique après une attaque cybernétique. Parmi mes réalisations, j'ai pu :</p>
+            <h2>Un problème venu de l'intérieur</h2>
+            <p>Pendant mon stage nous avons eu un problème venant de l'intérieur… Pour régler ce problème nous avons appliqué :</p>
             <ul>
-                <li><strong>Identifier et corriger des vulnérabilités</strong> : J'ai analysé les machines mal protégées ou non conformes aux standards de sécurité et j'ai aidé à installer des outils comme Trend Micro et GLPI sur l'ensemble des postes.</li>
-                <li><strong>Sécuriser l'infrastructure IT</strong> : J'ai également travaillé à la mise en place de mesures de protection comme le MFA (Multi-Factor Authentication) et la restriction d'accès à des sites potentiellement dangereux ou distrayants pour les employés.</li>
-                <li><strong>Améliorer la cybersécurité interne</strong> : Mes missions ont aussi inclus l'identification et la résolution de problèmes de sécurité interne, notamment concernant l'utilisation non autorisée de logiciels et d'extensions non sécurisées.</li>
+                <li>Analyse</li>
+                <li>Réflexion</li>
+                <li>Résolution</li>
             </ul>
 
-            <h2>Une formation en cybersécurité renforcée par l'expérience</h2>
-            <p>L'une des plus grandes leçons tirées de ce stage a été l'importance de la collaboration au sein d'une équipe IT. J'ai pu observer que chaque rôle dans une équipe, qu'il s'agisse d'un administrateur réseau ou d'un expert en sécurité, est complémentaire. Mon travail avec le SOC (Security Operations Center) et sur des outils comme <strong>PingCastle</strong> m'a permis de comprendre la complexité et l'importance d'une infrastructure IT bien sécurisée.</p>
-            <p>En parallèle de ces missions techniques, ce stage m'a aidé à développer des compétences non techniques essentielles, telles que la communication, l'esprit d'équipe et la gestion du stress. Ces <strong>soft skills</strong> me seront précieuses dans ma future carrière.</p>
+            <h3>Analyse</h3>
+            <p>Durant la quatrième semaine, j’ai eu un problème avec un membre de l'équipe. En effet, j’ai remarqué qu'une personne de l'équipe allait sur des sites d’argent pendant les heures de travail et autres sites, mais il utilisait son PC professionnel pour jouer. Ensuite, j’ai analysé les logs de GLPI pour voir quel logiciel avait été installé et, en effet, plusieurs logiciels de jeu étaient installés. Pour confirmer cela, j'ai analysé les logs de Trend qui renvoient toutes les analyses du PC et j’ai découvert que cette personne utilisait aussi des extensions Chrome pour jouer, regarder Netflix, etc.</p>
 
-            <h2>Mon objectif : une alternance en cybersécurité 🚀🚀🚀</h2>
-            <p>Aujourd'hui, fort de mon expérience chez Dupont-Restauration, je suis plus que jamais déterminé à poursuivre ma carrière en cybersécurité. Je recherche activement une <strong>alternance</strong> dans ce domaine pour continuer à apprendre, à relever de nouveaux défis et à mettre en pratique les compétences que j'ai acquises jusqu'ici.</p>
-            <p>Je suis convaincu que cette alternance sera un tremplin pour atteindre mes objectifs professionnels. Je souhaite apporter ma contribution à des projets ambitieux tout en continuant à évoluer dans ce domaine en pleine expansion.</p>
-            <p>Si vous avez des contacts ou des opportunités en cybersécurité, je serais ravi que vous les partagiez avec moi 🙏. Mon CV est disponible et je suis prêt à discuter de toute opportunité qui pourrait m'aider à franchir cette prochaine étape de ma carrière.</p>
-            <p>Je vous remercie pour votre attention et votre aide précieuse.</p>
+            <h3>Résolution</h3>
+            <p>Pour résoudre ce problème, j’ai trois points à traiter :</p>
+            <ul>
+                <li>Les sites WEB</li>
+                <li>Les applications</li>
+                <li>Les extensions</li>
+            </ul>
 
-            <a href="Alternance SUCKIEL Théo cyber.pdf" download="Alternance SUCKIEL Théo cyber.pdf">Telecharger Mon CV</a>
+            <h4>Les sites web</h4>
+            <p>Pour traiter le problème des sites web qui ne devraient pas être utilisés pendant les heures de travail, j’ai utilisé la web réputation de Trend Micro pour bloquer les sites sur lesquels ils ne doivent pas aller (jeu d’argent, jeux, sites pornographiques, etc.).</p>
+            <img src="Trend_Micro_for_Chrome_Open_Blocked_Page.jpg" alt="" style="zoom: 3;">
 
-            <div style="text-align: center;">
-                <img src="Alternance SUCKIEL Théo cyber-1.png" alt="Alternance" style="zoom: 10;">
-            </div>
-        </article>
+            <h4>Les applications</h4>
+            <p>Pour régler le problème des applications installées, nous avons découvert que pour installer ces applications, cette personne utilisait son N2 pour pouvoir les installer. Nous avons donc supprimé son N2 et créé des règles sur les applications qui ne doivent pas être installées.</p>
+
+            <h4>Les extensions</h4>
+            <p>Pour régler le problème des extensions, nous avons d'abord essayé de les bloquer dans Trend Micro, mais nous n'avons pas réussi car les extensions ne sont pas considérées comme des pages web donc ne sont pas bloquables comme un site web. Nous avons donc décidé de passer par GPO pour bloquer les extensions de Chrome. Ce que nous avons fait est de bloquer toutes les extensions sur Chrome sauf Trend Micro pour continuer à avoir la protection de l’antivirus sur toutes les machines.</p>
+            <img src="Google-Chrome-Extensions.jpg" alt="">
+
+            <h3>Améliorations</h3>
+            <p>Pour améliorer le système et la sécurité, nous avons résolu ces problèmes car ils représentent une menace en termes de sécurité. Un logiciel malveillant installé avec un N2 qui parvient à s'introduire dans le système peut être dévastateur. Le premier point d'amélioration était de traquer les logs Winlogbeat (application qui renvoie des logs) qui sont envoyés au SOC, car dessus nous voyons une analyse complète du système. Avec cette application, nous sommes capables de détecter toute dérive et d'agir au plus vite.</p>
+        </article> 
     </main>
     <footer id="footer">
         <nav>
