@@ -19,15 +19,34 @@
         </nav>
     </header>
     <main>
-         <h1><strong>Contexte et missions</strong></h1>
+        <h1><strong>Contexte et missions</strong></h1>
 
-         <h2><strong>1. Contexte</strong></h2>
+        <h2><strong>1. Contexte</strong></h2>
 
-         <p>Mon stage chez Dupont-Restauration s'est déroulé dans un contexte particulièrement sensible, suite à une cyberattaque majeure survenue en décembre dernier.</p>
+        <p>Mon stage chez Dupont-Restauration s'est déroulé dans un contexte particulièrement sensible, suite à une cyberattaque majeure survenue en décembre dernier. (Attaque faite par black basta) L'attaque était de type ransomware (Chiffrement des données et demander une rançon) les attaquant sont passer par du phishing par mail, un employé a ensuite cliquer sur un lien. Par la suite, ils sont entrés dans le réseau et ont tout détruit.</p>
 
         <p>L'entreprise était alors en pleine reconstruction de son infrastructure informatique. Cette situation m'a offert une occasion unique d'observer et de participer à des initiatives de renforcement de la cybersécurité sous la supervision de Marc, le manager du département, et de Jordan, administrateur système et sécurité.</p>
 
-        <h2><strong>2. Missions</strong></h2>
+        <h2><strong>2. L’equipe</strong></h2>
+
+        <div style="text-align: center;">
+            <img src="" alt="DR" style="zoom: 3;">
+        </div>
+
+        <p>Au cours de mon stage, j'ai eu la chance d'être accompagné par Marc durant les deux premières semaines, ce qui m'a permis de m'intégrer rapidement au sein de l'entreprise et de mieux comprendre ses rouages. Par la suite, Jordan et Aurélien ont pris le relais et m'ont guidé sur les aspects techniques de la sécurité informatique au sein de Dupont-Restauration.</p>
+
+        <p>Ce que j'ai particulièrement apprécié dans l'environnement de travail au service IT de Dupont-Restauration, c'est son aspect à la fois convivial et familial. Le fait d'avoir les administrateurs et l'équipe de support travaillant côte à côte a favorisé une réelle synergie entre les différents membres de l'équipe. Cela a créé un esprit de collaboration fort et a rendu le cadre de travail à la fois motivant et agréable.</p>
+
+        <p>L'approche bienveillante et ouverte de l'équipe m'a permis de progresser rapidement et d'acquérir des compétences clés dans un environnement dynamique et solidaire.</p>
+
+        <h2><strong>3. Mes premières heures</strong></h2>
+
+        <p>Le jour de mon arrivée chez Dupont-Restauration, Marc m'a présenté à toute l'équipe, aussi bien le support que l'équipe des administrateurs. Cette présentation a été l'occasion de rencontrer les personnes avec qui j'allais collaborer tout au long de mon stage, facilitant ainsi mon intégration. Ensuite, j'ai eu droit à une présentation complète du groupe et de son organigramme, ce qui m'a permis de mieux comprendre le fonctionnement interne et les rôles de chacun au sein de l'entreprise. (Pour voir le fonctionnement de Dupont-Restauration, <strong><a href="article2.html">cliquez ICI</a></strong>).
+            Ce qui m'a particulièrement marqué et rendu ce début de stage agréable, c'est que j'ai été mis au travail dès le premier jour sur des outils tels que TrendMicro et GLPI. Cela m'a permis d'être rapidement impliqué dans des tâches concrètes, me donnant ainsi l'occasion de plonger directement dans le vif du sujet tout en étant accompagné par l'équipe.</p>
+
+
+
+        <h2><strong>4. Missions</strong></h2>
 
         <img src="" alt="">
 
@@ -35,23 +54,34 @@
 
         <p>L'accompagnement de Marc et Jordan m'a permis de comprendre comment une équipe IT collabore pour résoudre des problèmes complexes de manière agile et efficace, et comment les différents volets de la sécurité informatique – qu'ils soient techniques ou organisationnels – sont cruciaux pour assurer la résilience et la pérennité des systèmes d'information dans une entreprise comme Dupont-Restauration.</p>
 
-        <p>Pendant mon stage, ma première mission était de visiter le CIV (database) dans le but de comprendre leurs infrastructures. Mais le but premier, comme évoqué plus haut, était de voir la sauvegarde du système.
-            Dans un second temps, j’ai vu les ticket du SOC (security operation système), c’est à dire que le soc a accès à toute  notre infrastructure et reçoit les log du système, donc dès que quelque chose ne va pas, il reçoive des log et nous avertit à travers un ticket.
-        </p>
+        <p>Ma première semaine était une observation du système et fonctionnement de dupont-restauration. En effet j’ai du repèrer les PC du groupe qui était mal installée par les techniciens et représente un menace en terme de sécurité car ils n’ont pas trend micro donc pas d’anti-virus</p>
+        
+        <p>Par la suite j’ai visité leur CIV (Datacenter) ou l’on m'a montré l'infrastructure physique et virtuelle de dupont-restauration.
+            Leur Infracontients:
+            </p>
+            <ul>
+                <li>7 Serveurs HPE simplivity (Prod oracle & non-oracle)</li>
+                <li>Un Firewall (Fortinet)</li>
+                <li>Un Switch HPE</li>
+                <li>Un Serveur de sauvegarde & librairie bande LTO8</li>
+            </ul>
 
-        <p>Mon but ici était de valider les tickets pour déterminer et statuer sur leurs pertinences. La plupart était de petits événements, à l”exception d’un. En effet, un ticket concernant un scan de port est des ping (beaucoup) vers un serveur pour une application de commande de repas. En analysant le rapport, je me suis rendu compte que l'équipe de l’audit sécurité travaillait sur l’application sans en avertir la personne concernée. pu découvrir que derrière tout ça c'était en fait la team de l’audit de sécurité (AcTeam) qui était en train de travailler mais n’avait prévenu personne. 
-            Conclusion ⇨ aucun risque, sachant en plus qu’aucune donnée n’a pu être récupérée. </p>
+        <div style="text-align: center;">
+            <img src="Switch HPE.jpg" alt="DR" style="height: 700px; width: 1300px;">
+        </div>
 
-        <p>Pour finir, j'ai participé  au cosec ( ???? ) mensuel avec le soc (??). Le but de ce cosec est d'analyser notre système et d’en ressortir tous les défauts. Par exemple,on ressort toutes les vuln, CVE qui nous concerne. 
-            EXEMPLE : dans la dernière CVE, deux nous concernaient : une sur VMware (un logiciel pour créer des machines virtuelles) et une sur openSSh, sur laquelle j’ai dû travailler. Je vous expliquerai plus tard, le résultat! OU ???
-            Dans un second temps, il analyse notre ping Castle avec le score que nous avons, ce que nous avons amélioré et ce que nous devons faire dans le futur. 
-            EXEMPLE : nous avions un compte administrateur qui était l’admin principal de l’ad  qui servait pour les applications qui avait besoin de droit : le problème ici est que si quelqu’un en s’infiltrant dans l’applis récupère ce compte tout notre infra disparaît.  Nous avons donc créé des comptes de service qui sont liés à une application : si celle-ci saute, aucun souci puisque, le compte utilisé,est un compte de service qui a moins de droit donc moins de risque. C’est Principe du moindre privilège c’est à dire que chaque personne a des droit en fonction de ce qu'il fait est pas plus dans le but de limiter le risque de notre système si un compte tombe.
-            
-            C’est le principe du moindre privilège, chaque personne a des droits propres à ses besoins et sa fonction afin de limiter le risque.
+        <p>Par la suite Jordan m’a montré l’importance de la sauvegarde notamment grâce à Veeam, la rotation de sauvegarde et leur Job (Comment et quand la sauvegarde se lance)
+
+            Ensuite la grosse partie était la compréhension de TrendMicro et ses modules. Je detaillerais ce module dans La gestion de la cybersécurité chez dupont restauration.
+            Pour finir, j'ai participé  au cosec (Comité de sécurité avec l'équipe du soc qui nous donne les choses à améliorer) mensuel avec le soc (Security operation system). Le but de ce cosec est d'analyser notre système et d’en ressortir tous les défauts. Par exemple,on ressort toutes les vulnérabilités, CVE qui nous concerne. </p>
+
+        <p>Exemple : dans la dernière CVE, deux nous concernaient : une sur VMware (un logiciel pour créer des machines virtuelles) et une sur openSSh, sur laquelle j’ai dû travailler.</p>
+
+        <p>Dans un second temps, il analyse notre ping Castle, il détaille les choses à améliorer sur notre Active directory, les méthodes utilisées.
+            Exemple : nous avions un compte administrateur principal dans l'AD, utilisé pour les applications nécessitant des privilèges élevés. Le problème, c’est que si quelqu’un parvenait à s'infiltrer dans l’une de ces applications et à récupérer ce compte, toute notre infrastructure pourrait être compromise. Pour éviter cela, nous avons créé des comptes de service spécifiques à chaque application. Ainsi, en cas de compromission, seul le compte de service, qui dispose de droits limités, est affecté, réduisant ainsi les risques. Cela illustre le principe du moindre privilège, où chacun dispose uniquement des droits nécessaires à ses fonctions, minimisant les risques pour le système en cas de compromission d'un compte.
             </p>
 
 
-        
 
     </main>
     <footer id="footer">
